@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dashboard - Title</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div class="title"><h1>Dashboard</h1></div>
+<div class="list">
+<ul>
+<li><a href="#">Dashboard</a></li>
+<li><a href="#">Profile</a></li>
+<li><a href="#">Page</a></li>
+</ul>
+</div>
+<script>
+$(document).on("click",".list ul li a", function(e) {
+	e.preventDefault();
+	var page = this.text;
+	var url = '#' + this.text;
+	
+	document.title = page + ' - Title';
+	window_location = '/' + page;
+	window.history.pushState(null, page, url);
+	$('h1').html(page);
+	
+	return false;
+});
+</script>
+</body>
+</html>

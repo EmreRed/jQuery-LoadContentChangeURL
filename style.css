@@ -1,0 +1,38 @@
+body{
+	background: #f2cf66;
+}
+.title{
+	width: 500px;
+	left: calc(50% - 250px);
+	position: absolute;
+	text-align: center;
+}
+h1{
+	color: #fff;
+    font: 150% Futura-Medium, Futura, sans-serif;
+    font-size: 150%;
+    font-size: 30px;
+}
+.list{
+	position: absolute;
+	top: 250px;
+	left: calc(50% - 250px);
+	width: 500px;
+	text-align: center;
+}
+ul{
+	list-style: none;
+	padding: 0;
+}
+li{
+	display: inline-block;
+	background: #0000007a;
+	padding: 15px;
+	border-radius: 5px;
+	margin: 10px;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+	font: Futura-Medium, Futura, sans-serif;
+}
